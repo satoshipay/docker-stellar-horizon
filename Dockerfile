@@ -4,7 +4,7 @@ FROM debian:stretch
 ARG STELLAR_HORIZON_VERSION="v0.11.0"
 ARG STELLAR_HORIZON_BUILD_DEPS="git build-essential golang-go"
 
-MAINTAINER André Gaul <andre@gaul.io>
+LABEL maintainer="hello@satoshipay.io"
 
 # install stellar horizon
 ADD install.sh /
