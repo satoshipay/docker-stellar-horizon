@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+function horizon_init_db() {
+	horizon init db
+}
+
 { # try
     horizon_init_db
 	echo "finished initializing horizon db"
@@ -10,6 +14,4 @@
 
 horizon_init_db
 
-function horizon_init_db() {
-	horizon init db
-}
+exec "$@"
