@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 function horizon_init_db() {
-	horizon init db
+	horizon db init
 }
 
 { # try
