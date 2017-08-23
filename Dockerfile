@@ -13,4 +13,7 @@ RUN /install.sh
 # HTTP port
 EXPOSE 8000
 
+ADD entry.sh /
+ENTRYPOINT ["/entry.sh"]
+
 CMD ["horizon"]
