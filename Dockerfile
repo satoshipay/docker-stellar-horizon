@@ -1,8 +1,7 @@
-FROM debian:stretch
+FROM debian:stretch-slim
 
-# git tag from https://github.com/stellar/horizon
-ARG STELLAR_HORIZON_VERSION="v0.11.1"
-ARG STELLAR_HORIZON_BUILD_DEPS="git build-essential golang-go"
+ARG STELLAR_HORIZON_VERSION="0.13.0"
+ARG STELLAR_HORIZON_BUILD_DEPS="wget"
 
 LABEL maintainer="hello@satoshipay.io"
 

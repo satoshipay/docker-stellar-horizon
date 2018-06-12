@@ -4,7 +4,7 @@
 
 ## Docker Hub
 
-The Docker images are automatically built and published at [satoshipay/stellar-horizon](https://hub.docker.com/r/satoshipay/stellar-horizon/).
+The Docker images are published at [satoshipay/stellar-horizon](https://hub.docker.com/r/satoshipay/stellar-horizon/).
 
 ## Configuration
 
