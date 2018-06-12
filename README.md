@@ -12,7 +12,12 @@ All environment variables that Stellar Horizon accepts are supported. You can fi
 
 Make sure to set the following variables:
 
-* `DATABASE_URL`: *Horizon* database URL, e.g., `postgres://horizon-db-host/stellar-horizon`.
-* `STELLAR_CORE_DATABASE_URL`: *Stellar Core* database URL, e.g., `postgres://core-db-host/stellar-core`.
+* `DATABASE_URL`: *Horizon* database URL, e.g., `postgres://horizon-db-host/stellar-horizon`. See also `DATABASE_PASSWORD` below.
+* `STELLAR_CORE_DATABASE_URL`: *Stellar Core* database URL, e.g., `postgres://core-db-host/stellar-core`. See also `STELLAR_CORE_DATABASE_PASSWORD` below.
 * `STELLAR_CORE_URL`: *Stellar Core* HTTP URL, e.g., `http://core-host:11626`.
 * `INGEST`: ingest data from Stellar Core (true/false)
+
+The following environment variables are optional and can be used to provide passwords separately (e.g., via Kubernetes secrets):
+
+* `DATABASE_PASSWORD`: if it is provided the string `DATABASE_PASSWORD` in `DATABASE_URL` will be replaced with its value.
+* `STELLAR_CORE_DATABASE_PASSWORD`: if it is provided the string `STELLAR_CORE_DATABASE_PASSWORD` in `STELLAR_CORE_DATABASE_URL` will be replaced with its value.
