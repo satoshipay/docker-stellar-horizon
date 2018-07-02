@@ -4,7 +4,7 @@ set -ue
 
 # install deps
 apt-get update
-apt-get install -y $STELLAR_HORIZON_BUILD_DEPS
+apt-get install -y $STELLAR_HORIZON_BUILD_DEPS $STELLAR_HORIZON_DEPS
 
 # install horizon
 wget https://github.com/stellar/go/releases/download/horizon-v${STELLAR_HORIZON_VERSION}/horizon-v${STELLAR_HORIZON_VERSION}-linux-amd64.tar.gz -O stellar-horizon.tar.gz
