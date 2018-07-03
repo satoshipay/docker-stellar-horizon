@@ -21,3 +21,9 @@ The following environment variables are optional and can be used to provide pass
 
 * `DATABASE_PASSWORD`: if it is provided the string `DATABASE_PASSWORD` in `DATABASE_URL` will be replaced with its value.
 * `STELLAR_CORE_DATABASE_PASSWORD`: if it is provided the string `STELLAR_CORE_DATABASE_PASSWORD` in `STELLAR_CORE_DATABASE_URL` will be replaced with its value.
+
+### Docker Compose
+
+There is also an [example Docker Compose config](docker-compose.example.yml) – just run
+`docker-compose -f docker-compose.example.yml up` to get a functional Stellar Core and Horizon.
+**Make sure to use a new `NODE_SEED` if you intend to run this in production!*
