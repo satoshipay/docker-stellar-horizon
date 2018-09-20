@@ -8,7 +8,7 @@ services:
       - POSTGRES_DB=stellar-core
 
   stellar-core:
-    image: satoshipay/stellar-core:9.2.0-2
+    image: satoshipay/stellar-core:10.0.0
     restart: always
     ports:
     - 11625:11625
@@ -121,7 +121,7 @@ services:
       - POSTGRES_DB=stellar-horizon
 
   stellar-horizon:
-    image: satoshipay/stellar-horizon:0.13.0-2
+    image: satoshipay/stellar-horizon:0.14.1
     restart: on-failure
     ports:
     - 8000:8000
