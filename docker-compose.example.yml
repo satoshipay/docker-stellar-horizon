@@ -121,7 +121,7 @@ services:
       - POSTGRES_DB=stellar-horizon
 
   stellar-horizon:
-    image: satoshipay/stellar-horizon:0.14.1
+    image: satoshipay/stellar-horizon:0.14.2
     restart: on-failure
     ports:
     - 8000:8000
