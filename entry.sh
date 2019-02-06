@@ -2,7 +2,6 @@
 
 set -ue
 
-
 function horizon_init_db() {
   echo "Initializing Horizon database..."
   # use /dev/shm so that this works when / is mounted as read only
